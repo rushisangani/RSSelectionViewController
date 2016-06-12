@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2C4913C1D0DC3A400895E36 /* RSSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C4913B1D0DC3A400895E36 /* RSSearchBar.m */; };
 		A2E7AF591D0D53C90087C8B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E7AF581D0D53C90087C8B9 /* main.m */; };
 		A2E7AF5C1D0D53C90087C8B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E7AF5B1D0D53C90087C8B9 /* AppDelegate.m */; };
 		A2E7AF621D0D53C90087C8B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E7AF601D0D53C90087C8B9 /* Main.storyboard */; };
@@ -14,11 +15,12 @@
 		A2E7AF671D0D53C90087C8B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E7AF651D0D53C90087C8B9 /* LaunchScreen.storyboard */; };
 		A2E7AF721D0D53F90087C8B9 /* RSSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E7AF701D0D53F90087C8B9 /* RSSelectionViewController.m */; };
 		A2E7AF731D0D53F90087C8B9 /* RSSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2E7AF711D0D53F90087C8B9 /* RSSelectionViewController.xib */; };
-		A2E7AF771D0D54520087C8B9 /* RSSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E7AF761D0D54520087C8B9 /* RSSearchBar.m */; };
 		A2E7AF7A1D0D584C0087C8B9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E7AF791D0D584C0087C8B9 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A2C4913A1D0DC3A400895E36 /* RSSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSearchBar.h; sourceTree = "<group>"; };
+		A2C4913B1D0DC3A400895E36 /* RSSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSearchBar.m; sourceTree = "<group>"; };
 		A2E7AF541D0D53C90087C8B9 /* RSSelectionViewControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSelectionViewControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E7AF581D0D53C90087C8B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A2E7AF5A1D0D53C90087C8B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -30,8 +32,6 @@
 		A2E7AF6F1D0D53F90087C8B9 /* RSSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSelectionViewController.h; sourceTree = "<group>"; };
 		A2E7AF701D0D53F90087C8B9 /* RSSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSelectionViewController.m; sourceTree = "<group>"; };
 		A2E7AF711D0D53F90087C8B9 /* RSSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSSelectionViewController.xib; sourceTree = "<group>"; };
-		A2E7AF751D0D54520087C8B9 /* RSSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSearchBar.h; sourceTree = "<group>"; };
-		A2E7AF761D0D54520087C8B9 /* RSSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSearchBar.m; sourceTree = "<group>"; };
 		A2E7AF781D0D584C0087C8B9 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		A2E7AF791D0D584C0087C8B9 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A2C491391D0DC3A400895E36 /* RSSearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				A2C4913A1D0DC3A400895E36 /* RSSearchBar.h */,
+				A2C4913B1D0DC3A400895E36 /* RSSearchBar.m */,
+			);
+			path = RSSearchBar;
+			sourceTree = "<group>";
+		};
 		A2E7AF4B1D0D53C90087C8B9 = {
 			isa = PBXGroup;
 			children = (
@@ -91,21 +100,12 @@
 		A2E7AF6E1D0D53F90087C8B9 /* RSSelectionViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A2E7AF741D0D54520087C8B9 /* RSSearchBar */,
+				A2C491391D0DC3A400895E36 /* RSSearchBar */,
 				A2E7AF6F1D0D53F90087C8B9 /* RSSelectionViewController.h */,
 				A2E7AF701D0D53F90087C8B9 /* RSSelectionViewController.m */,
 				A2E7AF711D0D53F90087C8B9 /* RSSelectionViewController.xib */,
 			);
 			path = RSSelectionViewController;
-			sourceTree = SOURCE_ROOT;
-		};
-		A2E7AF741D0D54520087C8B9 /* RSSearchBar */ = {
-			isa = PBXGroup;
-			children = (
-				A2E7AF751D0D54520087C8B9 /* RSSearchBar.h */,
-				A2E7AF761D0D54520087C8B9 /* RSSearchBar.m */,
-			);
-			path = RSSearchBar;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -180,8 +180,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2E7AF721D0D53F90087C8B9 /* RSSelectionViewController.m in Sources */,
-				A2E7AF771D0D54520087C8B9 /* RSSearchBar.m in Sources */,
 				A2E7AF5C1D0D53C90087C8B9 /* AppDelegate.m in Sources */,
+				A2C4913C1D0DC3A400895E36 /* RSSearchBar.m in Sources */,
 				A2E7AF7A1D0D584C0087C8B9 /* HomeViewController.m in Sources */,
 				A2E7AF591D0D53C90087C8B9 /* main.m in Sources */,
 			);
@@ -330,6 +330,7 @@
 				A2E7AF6D1D0D53C90087C8B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
