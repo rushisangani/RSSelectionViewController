@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		A2E7AF591D0D53C90087C8B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E7AF581D0D53C90087C8B9 /* main.m */; };
 		A2E7AF5C1D0D53C90087C8B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E7AF5B1D0D53C90087C8B9 /* AppDelegate.m */; };
-		A2E7AF5F1D0D53C90087C8B9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E7AF5E1D0D53C90087C8B9 /* ViewController.m */; };
 		A2E7AF621D0D53C90087C8B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E7AF601D0D53C90087C8B9 /* Main.storyboard */; };
 		A2E7AF641D0D53C90087C8B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2E7AF631D0D53C90087C8B9 /* Assets.xcassets */; };
 		A2E7AF671D0D53C90087C8B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E7AF651D0D53C90087C8B9 /* LaunchScreen.storyboard */; };
+		A2E7AF721D0D53F90087C8B9 /* RSSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E7AF701D0D53F90087C8B9 /* RSSelectionViewController.m */; };
+		A2E7AF731D0D53F90087C8B9 /* RSSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2E7AF711D0D53F90087C8B9 /* RSSelectionViewController.xib */; };
+		A2E7AF771D0D54520087C8B9 /* RSSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E7AF761D0D54520087C8B9 /* RSSearchBar.m */; };
+		A2E7AF7A1D0D584C0087C8B9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E7AF791D0D584C0087C8B9 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +23,17 @@
 		A2E7AF581D0D53C90087C8B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A2E7AF5A1D0D53C90087C8B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2E7AF5B1D0D53C90087C8B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A2E7AF5D1D0D53C90087C8B9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A2E7AF5E1D0D53C90087C8B9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A2E7AF611D0D53C90087C8B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2E7AF631D0D53C90087C8B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2E7AF661D0D53C90087C8B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2E7AF681D0D53C90087C8B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2E7AF6F1D0D53F90087C8B9 /* RSSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSelectionViewController.h; sourceTree = "<group>"; };
+		A2E7AF701D0D53F90087C8B9 /* RSSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSelectionViewController.m; sourceTree = "<group>"; };
+		A2E7AF711D0D53F90087C8B9 /* RSSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSSelectionViewController.xib; sourceTree = "<group>"; };
+		A2E7AF751D0D54520087C8B9 /* RSSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSearchBar.h; sourceTree = "<group>"; };
+		A2E7AF761D0D54520087C8B9 /* RSSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSearchBar.m; sourceTree = "<group>"; };
+		A2E7AF781D0D584C0087C8B9 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A2E7AF791D0D584C0087C8B9 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +66,11 @@
 		A2E7AF561D0D53C90087C8B9 /* RSSelectionViewControllerExample */ = {
 			isa = PBXGroup;
 			children = (
+				A2E7AF6E1D0D53F90087C8B9 /* RSSelectionViewController */,
 				A2E7AF5A1D0D53C90087C8B9 /* AppDelegate.h */,
 				A2E7AF5B1D0D53C90087C8B9 /* AppDelegate.m */,
-				A2E7AF5D1D0D53C90087C8B9 /* ViewController.h */,
-				A2E7AF5E1D0D53C90087C8B9 /* ViewController.m */,
+				A2E7AF781D0D584C0087C8B9 /* HomeViewController.h */,
+				A2E7AF791D0D584C0087C8B9 /* HomeViewController.m */,
 				A2E7AF601D0D53C90087C8B9 /* Main.storyboard */,
 				A2E7AF631D0D53C90087C8B9 /* Assets.xcassets */,
 				A2E7AF651D0D53C90087C8B9 /* LaunchScreen.storyboard */,
@@ -78,6 +87,26 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		A2E7AF6E1D0D53F90087C8B9 /* RSSelectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A2E7AF741D0D54520087C8B9 /* RSSearchBar */,
+				A2E7AF6F1D0D53F90087C8B9 /* RSSelectionViewController.h */,
+				A2E7AF701D0D53F90087C8B9 /* RSSelectionViewController.m */,
+				A2E7AF711D0D53F90087C8B9 /* RSSelectionViewController.xib */,
+			);
+			path = RSSelectionViewController;
+			sourceTree = SOURCE_ROOT;
+		};
+		A2E7AF741D0D54520087C8B9 /* RSSearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				A2E7AF751D0D54520087C8B9 /* RSSearchBar.h */,
+				A2E7AF761D0D54520087C8B9 /* RSSearchBar.m */,
+			);
+			path = RSSearchBar;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -136,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2E7AF731D0D53F90087C8B9 /* RSSelectionViewController.xib in Resources */,
 				A2E7AF671D0D53C90087C8B9 /* LaunchScreen.storyboard in Resources */,
 				A2E7AF641D0D53C90087C8B9 /* Assets.xcassets in Resources */,
 				A2E7AF621D0D53C90087C8B9 /* Main.storyboard in Resources */,
@@ -149,8 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2E7AF5F1D0D53C90087C8B9 /* ViewController.m in Sources */,
+				A2E7AF721D0D53F90087C8B9 /* RSSelectionViewController.m in Sources */,
+				A2E7AF771D0D54520087C8B9 /* RSSearchBar.m in Sources */,
 				A2E7AF5C1D0D53C90087C8B9 /* AppDelegate.m in Sources */,
+				A2E7AF7A1D0D584C0087C8B9 /* HomeViewController.m in Sources */,
 				A2E7AF591D0D53C90087C8B9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
