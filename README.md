@@ -1,11 +1,13 @@
 # RSSelectionViewController
 
-A very useful control to select items from the list like dropdown in Android.
-**RSSelectionViewController** can be used as a ViewController in which user can select single/multiple items, search through the list and get selected item as string to display results.
+A powerful control to select items from the list like dropdown in Android. Save time by avoding boilerplate code in your project for search and selection screen.
+
+**RSSelectionViewController** can be used as a ViewController in which user can select **single/multiple** items, **search** through the list and get selected item as **string** to display results.
 
 
 
-![Alt text](/Images/image1.png?raw=true "Single Selection")       ![Alt text](/Images/image2.png?raw=true "Multiple Selection")
+
+![Alt text](/Images/image1.png?raw=true "Single Selection")             ![Alt text](/Images/image2.png?raw=true "Multiple Selection")
 
 
 
@@ -15,7 +17,7 @@ A very useful control to select items from the list like dropdown in Android.
 
 ## Features
 
-- Present/Push/PopOver RSSelectionViewController as per need.
+- **Present/Push/PopOver** RSSelectionViewController as per need.
 - Enable multiple selection using single property **allowMultipleSelection**.
 - Enable search funtionality using single property **allowSearch**.
 - Allow empty selection when you don't want to select anything by using single property **allowEmptySelection**.
@@ -48,7 +50,7 @@ RSSelectionViewController *selectionController = [[RSSelectionViewController all
 /* pass array as a dataSource, array of selected objects if any and identifier if required */
 [selectionController setDataArray:dataArray selectedObjects:selectedArray andDelegate:self forIdentifier:identifier];
 
-/* pass keyname to display roe title if dataArray contains dictionary */
+/* pass keyname to display row title if dataArray contains dictionary */
 selectionController.dataAccessKey = @"key_name";
 
 /* enable multiple selection */
