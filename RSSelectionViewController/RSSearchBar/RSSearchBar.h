@@ -34,7 +34,9 @@ static CGFloat kDefaultSearchBarHeight = 50;
 
 @property (nonatomic, strong) UIColor *prefferedTextColor;           // text color
 
-/* init */
--(id)initWithFrame:(CGRect)frame placeHolder:(NSString *)placeHolder font:(UIFont *)font andTextColor:(UIColor *)textColor;
+@property (nonatomic, strong) UIColor *bottomBorderColor;            // bottom border color
+
+/* public */
+-(id)setFrame:(CGRect)frame placeHolder:(NSString *)placeHolder font:(UIFont *)font andTextColor:(UIColor *)textColor;
 
 @end

@@ -129,7 +129,7 @@ static NSString *cellIdentifier = @"cell";
 
 -(void)addSearchBar {
     
-    self.searchBar = [[RSSearchBar alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, kDefaultSearchBarHeight) placeHolder:self.searchPlaceHolder font:nil andTextColor:nil];
+    [self.searchBar setFrame:CGRectMake(0, 0, self.tableView.frame.size.width, kDefaultSearchBarHeight) placeHolder:self.searchPlaceHolder font:nil andTextColor:nil];
     
     self.searchBar.tintColor = [[UIColor darkTextColor] colorWithAlphaComponent:0.9];
     self.searchBar.barTintColor = kSearchBarTintColor;
@@ -405,6 +405,14 @@ static NSString *cellIdentifier = @"cell";
 }
 
 #pragma mark- Getter
+
+-(RSSearchBar *)searchBar {
+    
+    if(!_searchBar){
+        _searchBar = [[RSSearchBar alloc] init];
+    }
+    return _searchBar;
+}
 
 -(NSString *)navigationTitle {
     

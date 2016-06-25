@@ -179,6 +179,7 @@ static NSString *identifier5 =   @"identifier5";
     selectionController.allowSearch = YES;
     selectionController.seperator = @" |";
     selectionController.searchPlaceHolder = @"Search Lastname";
+    selectionController.searchBar.bottomBorderColor = [UIColor greenColor];
     
     [self showSelectionController:selectionController];
 }

@@ -42,18 +42,21 @@ CGFloat kDefaultMargin = 5;
     return [super initWithCoder:aDecoder];
 }
 
-- (id)initWithFrame:(CGRect)frame placeHolder:(NSString *)placeHolder font:(UIFont *)font andTextColor:(UIColor *)textColor {
+- (instancetype)init {
+    self = [super init];
+    return self;
+}
+
+- (id)setFrame:(CGRect)frame placeHolder:(NSString *)placeHolder font:(UIFont *)font andTextColor:(UIColor *)textColor {
     
-    self = [super initWithFrame:frame];
-    if(self){
+    self.frame = frame;
+    self.placeholder = placeHolder;
+    self.prefferedTextFont = font;
+    self.prefferedTextColor = textColor;
     
-        self.placeholder = placeHolder;
-        self.prefferedTextFont = font;
-        self.prefferedTextColor = textColor;
-        
-        self.searchBarStyle = UISearchBarStyleProminent;
-        self.translucent = NO;
-    }
+    self.searchBarStyle = UISearchBarStyleProminent;
+    self.translucent = NO;
+    
     return self;
 }
 
@@ -104,7 +107,12 @@ CGFloat kDefaultMargin = 5;
     
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
     shapeLayer.path = path.CGPath;
+    
     shapeLayer.strokeColor = [UIColor orangeColor].CGColor;
+    if (self.bottomBorderColor) {
+        shapeLayer.strokeColor = self.bottomBorderColor.CGColor;
+    }
+    
     shapeLayer.lineWidth = 3;
     
     [self.layer addSublayer:shapeLayer];
@@ -126,6 +134,12 @@ CGFloat kDefaultMargin = 5;
         _prefferedTextColor = [UIColor darkTextColor];
     }
     return _prefferedTextColor;
+}
+
+#pragma mark- Setter
+
+-(void)setBottomBorderColor:(UIColor *)bottomBorderColor {
+    _bottomBorderColor = bottomBorderColor;
 }
 
 @end
