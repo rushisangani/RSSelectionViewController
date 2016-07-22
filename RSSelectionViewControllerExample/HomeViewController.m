@@ -188,9 +188,11 @@ static NSString *identifier5 =   @"identifier5";
     
     RSSelectionViewController *selectionController = [self getSelectionViewController];
     
-    [selectionController setDataArray:dataArray1 selectedObjects:selectedArray1 andDelegate:self forIdentifier:identifier1];
+    [selectionController setDataArray:dataArray1 selectedObjects:selectedArray1 andDelegate:self forIdentifier:identifier5];
     
     selectionController.allowEmptySelection = YES;
+    selectionController.allowSearch = YES;
+    
     [selectionController setNavigationBarTintColor:[[UIColor orangeColor] colorWithAlphaComponent:0.4] titleColor:[UIColor blackColor] andButtonsColor:[UIColor whiteColor]];
     
     [self showSelectionController:selectionController];

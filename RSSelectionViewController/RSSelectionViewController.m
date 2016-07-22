@@ -329,7 +329,7 @@ static NSString *cellIdentifier = @"cell";
     [self.currentSelectedObjects removeAllObjects];
     
     // if user has selected empty row
-    if(indexPath.row == 0 && self.allowEmptySelection){
+    if(indexPath.row == 0 && self.allowEmptySelection && !self.allowSearch){
         
         [self.selectedObjects setArray:self.currentSelectedObjects];
         
