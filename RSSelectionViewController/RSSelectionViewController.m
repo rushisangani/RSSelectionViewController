@@ -187,6 +187,10 @@ static NSString *cellIdentifier = @"cell";
 
 -(BOOL)isObjectSelectedForIndexPath:(NSIndexPath *)indexPath {
     
+    if(self.currentSelectedObjects.count == 0 && indexPath.row == 0 && self.allowEmptySelection){
+        return YES;
+    }
+    
     NSString *objectValue = [self getValueAtIndexPath:indexPath];
     
     NSUInteger index = NSNotFound;
